@@ -14,8 +14,11 @@
 ```
 import badge_scrape
 
-asins = ['']
-data = badge_scrape(asins)
+#path to webdriver
+wed_path = r'path_to_webdriver'
+
+asins = ['B01N9HQM9F']
+data = badge_scrape(asins,wed_path)
 
 print(data)
     
@@ -23,3 +26,8 @@ print(data)
 
 ### Returned
 Ruturns a dictionary with the ASIN (sku) as the key, and the badge name/badge category as values
+```
+
+{"B01N9HQM9F": ["#1 Best Seller", "Office Racks & Displays"]}
+
+```
