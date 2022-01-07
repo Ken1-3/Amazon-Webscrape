@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import json
 
-def badge_scrape(asins: list):
+def badge_scrape(asins: list,path: str):
     #add your asins in this list
     
     #create an empty list
@@ -21,7 +21,7 @@ def badge_scrape(asins: list):
     value_list = []
     
     #path to webdriver
-    driver = webdriver.Edge(r'path')
+    driver = webdriver.Edge(path)
     
     #For loop to extract data
     for key in asin_list:
